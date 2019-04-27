@@ -39,10 +39,6 @@ footer {
   width: 98%;
 }
 
-#oculto{
-	display: none;	
-}
-
 #left-sidebar-nav span.badge.new{
   line-height: 20px;
   margin-top: 11px;
