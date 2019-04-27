@@ -6303,8 +6303,8 @@ textarea.materialize-textarea {
   input[type=number]:focus:not([readonly]),
   input[type=search]:focus:not([readonly]),
   textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #ff4081;
-    box-shadow: 0 1px 0 0 #ff4081; }
+    border-bottom: 1px solid #406dffb4;
+    box-shadow: 0 1px 0 0 #406dffb4; }
   input[type=text]:focus:not([readonly]) + label,
   input[type=password]:focus:not([readonly]) + label,
   input[type=email]:focus:not([readonly]) + label,
@@ -6316,7 +6316,7 @@ textarea.materialize-textarea {
   input[type=number]:focus:not([readonly]) + label,
   input[type=search]:focus:not([readonly]) + label,
   textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #ff4081; }
+    color: #406dffb4; }
   input[type=text].valid, input[type=text]:focus.valid,
   input[type=password].valid,
   input[type=password]:focus.valid,
@@ -6362,7 +6362,7 @@ textarea.materialize-textarea {
   textarea.materialize-textarea.valid + label:after,
   textarea.materialize-textarea:focus.valid + label:after {
     content: attr(data-success);
-    color: #4CAF50;
+    color: rgb(69, 189, 73);
     opacity: 1; }
   input[type=text].invalid, input[type=text]:focus.invalid,
   input[type=password].invalid,
@@ -6385,8 +6385,8 @@ textarea.materialize-textarea {
   input[type=search]:focus.invalid,
   textarea.materialize-textarea.invalid,
   textarea.materialize-textarea:focus.invalid {
-    border-bottom: 1px solid #F44336;
-    box-shadow: 0 1px 0 0 #F44336; }
+    border-bottom: 1px solid rgb(255, 17, 0);
+    box-shadow: 0 1px 0 0 rgb(252, 17, 0); }
   input[type=text].invalid + label:after, input[type=text]:focus.invalid + label:after,
   input[type=password].invalid + label:after,
   input[type=password]:focus.invalid + label:after,
@@ -6461,7 +6461,7 @@ textarea.materialize-textarea {
     -ms-transition: color 0.2s;
     transition: color 0.2s; }
     .input-field .prefix.active {
-      color: #ff4081; }
+      color: #406dffb4; }
   .input-field .prefix ~ input,
   .input-field .prefix ~ textarea {
     margin-left: 3rem;

@@ -1,15 +1,17 @@
-<head>
-    <title>Pagina Principal</title>
-</head>
-
-<body>
- 
- <?php
-    include("header.php");
-  ?>
-  
-</body>
-
 <?php
-  include("footer.php");
+
+session_start();
+
+include 'db.php';
+include 'header.php';
+
+if(isset($_SESSION['login'])){
+	
+}
+else{
+	
+	header('location:page-login.php');
+}
+
+include 'footer.php';
 ?>

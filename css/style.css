@@ -1166,7 +1166,7 @@ tr.group:hover {
 ------------------------------------------*/
 
 .login-form {
-  width: 280px;  
+  width: 330px;  
 }
 .login-form-text{
   text-transform: uppercase;
@@ -1196,6 +1196,36 @@ tr.group:hover {
   text-align: center;
   padding: 20px 0 !important;
 }
+
+/*----------------------------------------
+    mensagem
+------------------------------------------*/
+.msg {
+  
+  border: 1px solid;
+  padding:10px;
+  margin: 20px;
+  color: grey;
+}
+.msg-error {
+  
+  border-color: #d32f2f;
+  background-color: #f53c39e7;
+  color: rgb(226, 226, 226);
+}
+.msg-alert {
+  
+   border-color: #ef6c00;
+  background-color: #ff9800;
+  color: white;
+}
+
+.msg-info{
+  border-color: #0288d1;
+  background-color: #29b6f6;
+  color: white;
+}
+
 /*----------------------------------------
     Email Page
 ------------------------------------------*/

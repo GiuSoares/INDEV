@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -13,75 +9,73 @@
 
   <!-- Favicons-->
   <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
-  <!-- Favicons-->
-  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
-  <!-- For iPhone -->
-  <meta name="msapplication-TileColor" content="#00bcd4">
-  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
-  <!-- For Windows Phone -->
-
-
-  <!-- CORE CSS-->
-  
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="css/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
-
-  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
   <link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
+<script type="javascript"></script>
 <body class="cyan  blue-grey lighten-1">
 
   <div id="login-page" class="row">
     <div class="col s12 z-depth-8 card-panel">
-      <form class="login-form">
+      <form class="login-form" method="POST" action="func-registrar.php">
         <div class="row">
           <div class="input-field col s12 center">
             <h4>Registrar</h4>
           </div>
         </div>
+        <?php if(isset($_GET['erro1'])){ ?>
+            <div class="msg msg-error scale-transition">
+              <div class="mdi-alert-error"></div>
+                Email já cadastrado.
+              </div>
+          <?php } ?>
+          <?php if(isset($_GET['erro2'])){ ?>
+            <div class="msg msg-error scale-transition">
+              <div class="mdi-alert-error" alt="mensagem de erro" toast></div>
+                CPF já cadastrado.
+              </div>
+          <?php } ?>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
-            <input id="nome" type="text">
+            <input id="nome" name="nome" required minlength="4" pattern="[a-z\s]+{4}" type="text">
             <label for="nome" class="center-align">Nome</label>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-communication-email prefix"></i>
-            <input id="email" type="email">
+            <input id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  type="email">
             <label for="email" class="center-align">Email</label>
           </div>
         </div>
           <div class="row margin">
             <div class="input-field col s12">
               <i class="mdi-action-perm-contact-cal prefix"></i>
-              <input id="cpf" type="text">
+              <input id="cpf" name="cpf" required type="text">
               <label for="cpf">CPF</label>
             </div>
           </div>
           <div class="row margin">
             <div class="input-field col s12">
             <i class="mdi-communication-phone prefix"></i>
-              <input id="telefone" type="text">
+              <input id="telefone" name="telefone" required maxlength="15"  pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" type="text">
               <label for="telefone">Telefone</label>
             </div>
           </div>
           <div class="row margin">
             <div class="input-field col s12">
               <i class="mdi-action-lock-outline prefix"></i>
-              <input id="senha" type="password">
+              <input id="senha" name="senha" required type="password">
               <label for="senha">Senha</label>
             </div>
           </div>
-        
-        <div class="row">
           <div class="input-field col s12">
-            <a href="index.html" class="btn waves-effect waves-light col s12">Registar Agora</a>
+            <button type="submit" class="btn waves-effect waves-light col s12 black">Registar Agora</button>
           </div>
           <div class="input-field col s12">
             <p class="margin center medium-small sign-up">Você já possui conta ?<a href="page-login.php"> Entrar</a></p>
@@ -90,19 +84,7 @@
       </form>
     </div>
   </div>
-
-  <!-- jQuery Library -->
-  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-  <!--materialize js-->
-  <script type="text/javascript" src="js/materialize.js"></script>
-  <!--prism-->
-  <script type="text/javascript" src="js/prism.js"></script>
-  <!--scrollbar-->
-  <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-
-  <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-  <script type="text/javascript" src="js/plugins.js"></script>
-
 </body>
-
-</html>
+<?php
+  include ("footer.php");
+?>
