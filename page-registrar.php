@@ -63,7 +63,7 @@
           <div class="row margin">
             <div class="input-field col s12">
             <i class="mdi-communication-phone prefix"></i>
-              <input id="telefone" name="telefone" required maxlength="15"  pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" type="text">
+              <input id="telefone" name="telefone" required maxlength="11"  type="text">
               <label for="telefone">Telefone</label>
             </div>
           </div>

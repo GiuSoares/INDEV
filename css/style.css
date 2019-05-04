@@ -446,7 +446,7 @@ ul.side-nav.fixed:hover {
   /*overflow-y:hidden;*/
 }
 ul.side-nav.fixed li.user-details {
-  background: url(../images/user-bg.jpg) no-repeat center center;
+  background: url(../img/bg-perfil.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

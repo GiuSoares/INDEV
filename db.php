@@ -1,10 +1,10 @@
 <?php 
 
 $servidor = "localhost";
-$usuario = "root";
+$user = "root";
 $senha = "";
 $db = "indev";
 
-$conexao = mysqli_connect($servidor, $usuario, $senha, $db);
- 
+$conexao = mysqli_connect($servidor, $user, $senha, $db);
+
 ?>

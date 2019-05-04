@@ -4,22 +4,16 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
- 
-  <title>Pagina de Login</title>
-
+  
   <link rel="icon" href="img/favicon/favicon-32x32.png" sizes="32x32">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="css/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
-
-  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
-
   
   <title>Pagina de Login</title>
  
 </head>
-
-<body class="cyan  blue-grey lighten-1">
+<body class="blue-grey lighten-1">
   <div id="login-page" class="row">
     <form class="login-form" method="POST" action="func-login.php">
       <div class="col s12 z-depth-4 card-panel">
