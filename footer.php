@@ -14,4 +14,5 @@
     <script type="text/javascript" src="js/plugins/sparkline/sparkline-script.js"></script>  
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="js/plugins.js"></script>
-    <script type="text/javascript" src="js/jquery.mask.min.js"/></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <link href="js/plugins/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">

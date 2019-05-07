@@ -31,7 +31,7 @@
                     </div>
                     <div class="col col s8 m8 l8">
                         <ul id="profile-dropdown" class="dropdown-content">
-                            <li><a href="#"><i class="mdi-action-face-unlock"></i>Perfil</a></li>
+                            <li><a href="page-perfil.php"><i class="mdi-action-face-unlock"></i>Perfil</a></li>
                             <li><a href="#"><i class="mdi-action-settings"></i>Carteira</a></li>
                             <li class="divider"></li>
                             <li>
@@ -43,7 +43,7 @@
                             </li>
                         </ul>
                         <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" style="margin-top:20%"
-                            data-activates="profile-dropdown"><?php echo $_SESSION['usuario'];?><i class="mdi-navigation-arrow-drop-down right"></i>
+                            data-activates="profile-dropdown"><?php echo $_SESSION['nome'];?><i class="mdi-navigation-arrow-drop-down right"></i>
                         </a>
                         
                     </div>
@@ -77,8 +77,8 @@
             </ul>
             <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2"><i class="mdi-navigation-menu" ></i></a>
         </aside>
-
-
+    </div>
+</div>
 <!-- CHAT -->
         <aside id="right-sidebar-nav">
             <ul id="chat-out" class="side-nav rightside-navigation">
@@ -137,5 +137,3 @@
             </ul>
         </aside>
 <!-- FIM CHAT -->
-    </div>
-</div>

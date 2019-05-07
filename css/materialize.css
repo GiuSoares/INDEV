@@ -2629,6 +2629,11 @@ span.badge {
 .mdi-ul > li {
   position: relative; }
 
+.repo-list, .repo-list-item {
+    position: relative;}
+
+.codesearch-results .repo-list-item+.repo-list-item {
+      border-top: 1px solid #e1e4e8;}
 .mdi-li {
   position: absolute;
   left: -2.14285714em;
@@ -4966,6 +4971,16 @@ span.badge {
   max-width: 1280px;
   width: 90%; }
 
+  .border-bot {
+    border-bottom: 1px solid #e1e4e8!important;}
+
+  .border {
+    border-bottom: 1px solid #e1e4e8!important;
+    border-top: 1px solid #e1e4e8!important}
+    
+    .pt-4 {
+      padding-bottom: 24px!important;
+      padding-top: 24px!important; }
 @media only screen and (min-width: 601px) {
   .container {
     width: 85%; } }
@@ -6660,7 +6675,6 @@ form p:last-child {
 /* Remove default checkbox */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
-  position: absolute;
   left: -9999px;
   visibility: hidden; }
 
