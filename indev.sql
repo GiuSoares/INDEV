@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 04-Maio-2019 às 02:48
--- Versão do servidor: 10.1.28-MariaDB
--- PHP Version: 5.6.32
+-- Generation Time: 08-Maio-2019 às 08:27
+-- Versão do servidor: 10.1.37-MariaDB
+-- versão do PHP: 7.3.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -217,7 +217,9 @@ CREATE TABLE `usuario` (
 INSERT INTO `usuario` (`idusuario`, `nome`, `cpf`, `email`, `senha`, `telefone`, `prestador`, `saldo`, `nota`) VALUES
 (1, 'Andrey', '86423886091', 'andreyrodrigues226@hotmail.com', '202cb962ac59075', '5180243582', '', 0, NULL),
 (2, 'joao', '86423887897', 'joao.machado@laureate.com.br', '12', '5180243583', '', 0, NULL),
-(3, 'cleber', '2222', 'cleber@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', '22222', '', 0, NULL);
+(3, 'cleber', '2222', 'cleber@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', '22222', '', 0, NULL),
+(4, 'Vitor', '03585193064', '', '81dc9bdb52d04dc20036dbd8313ed055', '51999615125', '', 0, NULL),
+(5, 'Teste Final', '111111', 'teste@teste.com', 'b59c67bf196a4758191e42f76670ceba', '1111111', '', 0, NULL);
 
 --
 -- Indexes for dumped tables
@@ -390,7 +392,7 @@ ALTER TABLE `transacao`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables

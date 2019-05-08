@@ -154,6 +154,10 @@ if(isset($_SESSION['login'])){
                                         <div class="input-field col s12">
                                             <div id="basic-form" class="section">
                                                 <form method="POST" action="func-edit-perfil.php" class="col s12">
+                                                    <div class="row">
+                                                            <div class="input-field col s8">
+                                                                <input id="idusuario" type="hidden" name="idusuario" value="<?php echo $_SESSION['idusuario'];?>">
+                                                            </div>
                                                         <div class="row">
                                                             <div class="input-field col s8">
                                                                 <input id="nome" type="text" name="nome" value="<?php echo $_SESSION['nome'];?>">

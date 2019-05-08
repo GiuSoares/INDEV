@@ -5,15 +5,15 @@ include 'db.php';
 $ID = $_SESSION['idusuario'];
 
 if($ID){
+    $idusuario = $_POST['idusuario'];
     $nome = $_POST['nome'];
-    $cpf = $_POST['cpf'];		
-    $email = $_POST['email'];
     $telefone = $_POST['telefone'];
-    $insert = "UPDATE usuario SET nome='$nome',cpf='$cpf',email='$email',telefone='$telefone' where idusuario = $ID";
+    $insert = "UPDATE usuario SET nome='$nome',telefone='$telefone' where idusuario = $idusuario";
 
     if ($conexao->query($insert) === TRUE){
-        
-        echo "Não foi possivel ALTERAR os dados, devido ao erro: ";
+        echo "Dados alterados com sucesso!";
+        header ("Location: page-index.php");
+        $_SESSION['nome']=$nome;
     }else{
         include ("header.php");
         echo "Não foi possivel ALTERAR os dados, devido ao erro: " . $conexao->error;
